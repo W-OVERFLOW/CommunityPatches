@@ -137,7 +137,7 @@ tasks.register<PythonTask>("checkBugStatuses") {
 }
 
 publishMods {
-    displayName.set("Debugify $version")
+    displayName.set("Debugify ${project.version}")
 
     file.set(tasks.remapJar.get().archiveFile)
 
