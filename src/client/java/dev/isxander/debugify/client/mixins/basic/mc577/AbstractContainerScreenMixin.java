@@ -19,7 +19,8 @@ import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 @BugFix(id = "MC-577", category = FixCategory.BASIC, env = BugFix.Env.CLIENT)
 @Mixin(AbstractContainerScreen.class)
 public abstract class AbstractContainerScreenMixin extends Screen {
-    @Shadow protected abstract void slotClicked(Slot slot, int slotId, int button, ClickType actionType);
+    @Shadow
+    protected abstract void slotClicked(Slot slot, int slotId, int button, ClickType actionType);
 
     protected AbstractContainerScreenMixin(Component title) {
         super(title);
@@ -33,6 +34,7 @@ public abstract class AbstractContainerScreenMixin extends Screen {
     @Inject(method = "mouseClicked", at = @At(value = "INVOKE", target = "Lnet/minecraft/Util;getMillis()J"), locals = LocalCapture.CAPTURE_FAILSOFT, cancellable = true)
     private void dropWithMouse(double mouseX, double mouseY, int button, CallbackInfoReturnable<Boolean> cir, boolean isPickItem, Slot hoveredSlot) {
         if (minecraft.options.keyDrop.matchesMouse(button)) {
+            if (hoveredSlot == null) return;
             slotClicked(hoveredSlot, hoveredSlot.index, hasControlDown() ? 1 : 0, ClickType.THROW);
             cir.setReturnValue(true);
         }
