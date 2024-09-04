@@ -2,8 +2,8 @@
 
 <img src="https://dl.isxander.dev/logos/debugify/v2/debugify-512x.png" width="100"/>
 
-# Debugify
-#### Debugify is a project that fixes **over 70** bugs found on the <a href="https://bugs.mojang.com/projects/MC/issues">bug tracker</a> in Minecraft.
+# Debug1ss0fy
+#### Debug1ss0fy is a project that fixes **over 70** bugs found on the <a href="https://bugs.mojang.com/projects/MC/issues">bug tracker</a> in Minecraft.
 (and does nothing more!)
 
 [![wakatime](https://wakatime.com/badge/github/W-OVERFLOW/Debugify.svg?style=for-the-badge)](https://wakatime.com/badge/github/W-OVERFLOW/Debugify)
