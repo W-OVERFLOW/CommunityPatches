@@ -39,7 +39,7 @@
   "accessWidener": "debugify.accesswidener",
   "depends": {
     "fabricloader": ">=0.14.0",
-    "minecraft": "1.21",
+    "minecraft": "1.21.1",
     "java": ">=21",
     "fabric-resource-loader-v0": "*"
   },
