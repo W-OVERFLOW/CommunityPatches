@@ -9,8 +9,8 @@
   ],
   "contact": {
     "homepage": "https://isxander.dev",
-    "issues": "https://github.com/isXander/Debugify/issues",
-    "sources": "https://github.com/isXander/Debugify"
+    "issues": "https://github.com/Dev1ss0/debug1ss0fy/issues",
+    "sources": "https://github.com/Dev1ss0/debug1ss0fy"
   },
   "license": "LGPLv3",
   "environment": "*",
@@ -39,7 +39,7 @@
   "accessWidener": "debugify.accesswidener",
   "depends": {
     "fabricloader": ">=0.14.0",
-    "minecraft": "1.21.1",
+    "minecraft": "1.21",
     "java": ">=21",
     "fabric-resource-loader-v0": "*"
   },
