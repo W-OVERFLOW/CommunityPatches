@@ -21,6 +21,7 @@
     "basic.mc14923.ServerGamePacketListenerImplMixin",
     "basic.mc155509.PufferfishMixin",
     "basic.mc160095.CactusBlockMixin",
+    "basic.mc177831.LocateDistanceMixin",
     "basic.mc179072.SwellGoalMixin",
     "basic.mc183990.MobMixin",
     "basic.mc193343.PlayerMixin",

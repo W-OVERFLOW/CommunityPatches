@@ -59,6 +59,7 @@
   "debugify.fix_explanation.mc-89146": "Provides a strict save order of tile entities, to match the update order which then allows initial update of tile entities to be in the correct order.",
   "debugify.fix_explanation.mc-93018": "Only initiate breeding if the wolf is tamed.",
   "debugify.fix_explanation.mc-100991": "Notifies the damage tracker of a thrown fishing hook damaging the entity with 0 damage, like snowballs.",
+  "debugify.fix_explanation.mc-177381": "The /locate command will now return the correct structure distance when very far from it.",
   "debugify.fix_explanation.mc-119417": "Stops player from sleeping when they change to spectator.",
   "debugify.fix_explanation.mc-119754": "Tells firework entities that players are not elytra flying if in spectator",
   "debugify.fix_explanation.mc-121706": "Entities with a ranged bow attack goal are forced to look at their target.",
