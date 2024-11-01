@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.At;
 @BugFix(id = "MC-155509", category = FixCategory.BASIC, env = BugFix.Env.SERVER)
 @Mixin(Pufferfish.class)
 public class PufferfishMixin {
-    @ModifyExpressionValue(method = "playerTouch", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/player/Player;hurt(Lnet/minecraft/world/damagesource/DamageSource;F)Z"))
+    @ModifyExpressionValue(method = "playerTouch", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/player/Player;hurtServer(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/damagesource/DamageSource;F)Z"))
     private boolean shouldStingPlayer(boolean damaged) {
         return damaged && ((Pufferfish)(Object) this).isAlive();
     }
