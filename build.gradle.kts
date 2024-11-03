@@ -6,7 +6,7 @@ plugins {
 
     id("fabric-loom") version "1.7.+"
 
-    id("me.modmuss50.mod-publish-plugin") version "0.5.+"
+    id("me.modmuss50.mod-publish-plugin") version "0.7.+"
     `maven-publish`
 
     id("org.ajoberstar.grgit") version "5.0.0"
