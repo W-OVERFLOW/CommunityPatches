@@ -1,10 +1,8 @@
 package dev.isxander.debugify.client.mixins.basic.mc217716;
 
-import com.llamalad7.mixinextras.injector.v2.WrapWithCondition;
 import dev.isxander.debugify.fixes.BugFix;
 import dev.isxander.debugify.fixes.FixCategory;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.renderer.GameRenderer;
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import org.spongepowered.asm.mixin.Final;
@@ -17,8 +15,8 @@ import org.spongepowered.asm.mixin.injection.At;
 public class GameRendererMixin {
     @Shadow @Final Minecraft minecraft;
 
-    @WrapWithCondition(method = "render", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/renderer/GameRenderer;renderConfusionOverlay(Lnet/minecraft/client/gui/GuiGraphics;F)V"))
-    private boolean shouldShowNauseaOverlay(GameRenderer instance, GuiGraphics guiGraphics, float f) {
-        return !minecraft.player.isSpectator();
+    @ModifyExpressionValue(method = "renderLevel", at = @At(value = "INVOKE", target = "Ljava/lang/Double;floatValue()F"))
+    private float shouldShowNauseaOverlay(float original) {
+        return minecraft.player.isSpectator() ? 0.0f : original;
     }
 }

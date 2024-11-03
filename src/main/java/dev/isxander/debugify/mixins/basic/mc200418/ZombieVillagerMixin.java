@@ -16,8 +16,8 @@ import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 @BugFix(id = "MC-200418", category = FixCategory.BASIC, env = BugFix.Env.SERVER)
 @Mixin(ZombieVillager.class)
 public class ZombieVillagerMixin {
-    @Inject(method = "finishConversion", at = @At("RETURN"))
-    private void dismountIfJockey(ServerLevel world, CallbackInfo ci, @Local(ordinal = 0) Villager villager) {
+    @Inject(method = "method_63659", at = @At("RETURN"))
+    private void dismountIfJockey(ServerLevel serverLevel, Villager villager, CallbackInfo ci) {
         if (villager.isPassenger() && villager.getVehicle() instanceof Chicken && villager.isBaby()) {
             villager.removeVehicle();
         }

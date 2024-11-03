@@ -1,5 +1,6 @@
 package dev.isxander.debugify.client.mixins.basic.mc122477;
 
+import com.mojang.blaze3d.TracyFrameCapture;
 import dev.isxander.debugify.fixes.BugFix;
 import dev.isxander.debugify.fixes.FixCategory;
 import dev.isxander.debugify.client.helpers.mc122477.KeyboardPollCounter;
@@ -14,7 +15,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(value = RenderSystem.class, priority = 1100, remap = false) // higher priority to improve compatibility with VulkanMod
 public class RenderSystemMixin {
     @Inject(method = "flipFrame", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/systems/RenderSystem;pollEvents()V"))
-    private static void onPollEvents(long window, CallbackInfo ci) {
+    private static void onPollEvents(long l, TracyFrameCapture tracyFrameCapture, CallbackInfo ci) {
         KeyboardPollCounter.poll();
     }
 }
