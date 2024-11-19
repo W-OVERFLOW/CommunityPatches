@@ -4,9 +4,9 @@ import ru.vyarus.gradle.plugin.python.task.PythonTask
 plugins {
     java
 
-    id("fabric-loom") version "1.7.+"
+    id("fabric-loom") version "1.8.+"
 
-    id("me.modmuss50.mod-publish-plugin") version "0.5.+"
+    id("me.modmuss50.mod-publish-plugin") version "0.8.+"
     `maven-publish`
 
     id("org.ajoberstar.grgit") version "5.0.0"
@@ -15,7 +15,7 @@ plugins {
 }
 
 group = "dev.isxander"
-version = "1.21.1+1.0"
+version = "1.21.3+1.0"
 
 loom {
     splitEnvironmentSourceSets()
@@ -215,7 +215,7 @@ publishing {
 tasks.register("publishDebugify") {
     group = "debugify"
 
-    dependsOn("checkBugStatuses")
+    //dependsOn("checkBugStatuses")
 
     dependsOn("clean")
 
