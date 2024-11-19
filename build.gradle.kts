@@ -6,7 +6,7 @@ plugins {
 
     id("fabric-loom") version "1.6.+"
 
-    id("com.modrinth.minotaur") version "2.7.+"
+    id("com.modrinth.minotaur") version "2.8.+"
     id("me.hypherionmc.cursegradle") version "2.+"
     id("com.github.breadmoirai.github-release") version "2.+"
     `maven-publish`
