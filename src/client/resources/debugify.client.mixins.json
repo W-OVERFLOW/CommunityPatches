@@ -26,7 +26,6 @@
     "basic.mc197260.LivingEntityRendererMixin",
     "basic.mc215531.GuiMixin",
     "basic.mc217716.GameRendererMixin",
-    "basic.mc227169.PlayerRendererMixin",
     "basic.mc22882.AbstractContainerScreenMixin",
     "basic.mc22882.MinecraftMixin",
     "basic.mc231097.LocalPlayerMixin",

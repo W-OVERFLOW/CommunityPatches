@@ -16,7 +16,6 @@
     "basic.mc121903.MinecraftCommandBlockMixin",
     "basic.mc129909.ServerPlayerMixin",
     "basic.mc132878.ArmorStandMixin",
-    "basic.mc135971.AbstractContainerMenuMixin",
     "basic.mc155509.PufferfishMixin",
     "basic.mc160095.CactusBlockMixin",
     "basic.mc179072.SwellGoalMixin",
