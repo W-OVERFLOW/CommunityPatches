@@ -5,10 +5,8 @@
 |----------|-------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Basic    | [MC-577](https://bugs.mojang.com/browse/MC-577)       | Mouse buttons block all inventory controls that are not default                                                                     |
 | Basic    | [MC-4490](https://bugs.mojang.com/browse/MC-4490)     | Fishing line not attached to fishing rod in third person while crouching                                                            |
-| Gameplay | [MC-12829](https://bugs.mojang.com/browse/MC-12829)   | Flying through ladders/vines/scaffolding in creative mode slows you down                                                            |
 | Basic    | [MC-22882](https://bugs.mojang.com/browse/MC-22882)   | Ctrl + Q won't work on Mac (disabled by default)                                                                                    |
 | Basic    | [MC-46766](https://bugs.mojang.com/browse/MC-46766)   | Mining a block in Survival, then changing to Spectator creates a breaking animation and sound                                       |
-| Basic    | [MC-55347](https://bugs.mojang.com/browse/MC-55347)   | Title with long duration shows in other world                                                                                       |
 | Basic    | [MC-59810](https://bugs.mojang.com/browse/MC-59810)   | Cannot break blocks while sprinting (Ctrl+Click = right click on macOS) *(macOS only)*                                              |
 | Basic    | [MC-79545](https://bugs.mojang.com/browse/MC-79545)   | The experience bar disappears when too many levels are given to the player                                                          |
 | Basic    | [MC-80859](https://bugs.mojang.com/browse/MC-80859)   | Starting to drag item stacks over other compatible stacks makes the latter invisible until appearance change (stack size increases) |
@@ -16,7 +14,6 @@
 | Basic    | [MC-93384](https://bugs.mojang.com/browse/MC-93384)   | Bubbles appear at the feet of drowning mobs                                                                                         |
 | Basic    | [MC-105068](https://bugs.mojang.com/browse/MC-105068) | Hitting another player blocking with a shield plays normal hurt sound                                                               |
 | Basic    | [MC-108948](https://bugs.mojang.com/browse/MC-108948) | Boat on top of slime blocks hover over block                                                                                        |
-| Basic    | [MC-111516](https://bugs.mojang.com/browse/MC-111516) | Player flickers/turns invisible when flying at high speeds                                                                          |
 | Basic    | [MC-112730](https://bugs.mojang.com/browse/MC-112730) | Beacon beam and structure block render twice per frame                                                                              |
 | Basic    | [MC-116379](https://bugs.mojang.com/browse/MC-116379) | Punching with a cast fishing rod in the off-hand detaches fishing line from rod                                                     |
 | Basic    | [MC-122627](https://bugs.mojang.com/browse/MC-122627) | Tab suggestion box has missing padding on right side                                                                                |
@@ -97,5 +94,8 @@ Bugs that this mod has patched but has been superseded by a vanilla update.
 | [MC-31819](https://bugs.mojang.com/browse/MC-31819)   | Hunger saturation depletes on Peaceful                                                                          | 24w21a      |
 | [MC-227169](https://bugs.mojang.com/browse/MC-227169) | The main hand is broken when you hold a crossbow loaded into the secondary hand                                 | 24w33a      |
 | [MC-135971](https://bugs.mojang.com/browse/MC-135971) | Can't use CTRL+Q in crafting table                                                                              | 24w33a      |
+| [MC-12829](https://bugs.mojang.com/browse/MC-12829)   | Flying through ladders/vines/scaffolding in creative mode slows you down                                        | 24w44a      |
+| [MC-55347](https://bugs.mojang.com/browse/MC-55347)   | Title with long duration shows in other world                                                                   | 24w44a      |
+| [MC-111516](https://bugs.mojang.com/browse/MC-111516) | Player flickers/turns invisible when flying at high speeds                                                      | 24w44a      |
 
 

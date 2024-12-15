@@ -4,7 +4,7 @@ import ru.vyarus.gradle.plugin.python.task.PythonTask
 plugins {
     java
 
-    id("fabric-loom") version "1.8.+"
+    id("fabric-loom") version "1.9.+"
 
     id("me.modmuss50.mod-publish-plugin") version "0.8.+"
     `maven-publish`
@@ -15,7 +15,7 @@ plugins {
 }
 
 group = "dev.isxander"
-version = "1.21.3+1.0"
+version = "1.21.4+1.0"
 
 loom {
     splitEnvironmentSourceSets()

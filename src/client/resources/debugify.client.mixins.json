@@ -10,7 +10,6 @@
   "client": [
     "basic.mc105068.LivingEntityMixin",
     "basic.mc108948.BoatMixin",
-    "basic.mc111516.PlayerRendererMixin",
     "basic.mc112730.SectionCompilerMixin",
     "basic.mc116379.FishingHookRendererMixin",
     "basic.mc122477.EditBoxMixin",
@@ -36,15 +35,12 @@
     "basic.mc263865.KeyboardHandlerMixin",
     "basic.mc4490.FishingHookRendererMixin",
     "basic.mc46766.MinecraftMixin",
-    "basic.mc55347.GuiMixin",
     "basic.mc577.AbstractContainerScreenMixin",
     "basic.mc59810.MouseHandlerMixin",
     "basic.mc79545.GuiMixin",
     "basic.mc80859.AbstractContainerScreenMixin",
     "basic.mc90683.ClientPacketListenerMixin",
-    "basic.mc93384.LivingEntityMixin",
-    "gameplay.mc12829.LivingEntityMixin",
-    "gameplay.mc12829.PlayerMixin"
+    "basic.mc93384.LivingEntityMixin"
   ],
   "mixins": [
     "basic.mc176559.ItemStackAccessor"
