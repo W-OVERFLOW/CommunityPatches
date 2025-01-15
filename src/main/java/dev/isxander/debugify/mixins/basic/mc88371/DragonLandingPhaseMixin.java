@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.At;
 @BugFix(id = "MC-88371", category = FixCategory.BASIC, env = BugFix.Env.SERVER)
 @Mixin(DragonLandingPhase.class)
 public class DragonLandingPhaseMixin {
-    @ModifyExpressionValue(method = "doServerTick", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/Level;getHeightmapPos(Lnet/minecraft/world/level/levelgen/Heightmap$Types;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/BlockPos;"))
+    @ModifyExpressionValue(method = "doServerTick", at = @At(value = "INVOKE", target = "Lnet/minecraft/server/level/ServerLevel;getHeightmapPos(Lnet/minecraft/world/level/levelgen/Heightmap$Types;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/core/BlockPos;"))
     private BlockPos getLandingPos(BlockPos pos) {
         if (pos.getY() == 0) {
             // average height of portal
