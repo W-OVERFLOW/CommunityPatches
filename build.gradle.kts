@@ -9,7 +9,7 @@ plugins {
     id("me.modmuss50.mod-publish-plugin") version "0.8.+"
     `maven-publish`
 
-    id("org.ajoberstar.grgit") version "5.0.0"
+    id("org.ajoberstar.grgit") version "5.3.0"
 
     id("ru.vyarus.use-python") version "3.0.0"
 }
